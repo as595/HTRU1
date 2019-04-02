@@ -24,4 +24,29 @@ Pulsar: <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/puls
 Non-pulsar: <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000002.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000003.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000014.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000015.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000018.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000019.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000022.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000023.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000034.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/cand_000035.jpg"> 
 
 
+## Using the Dataset in PyTorch
 
+```python
+from torchvision import datasets
+import torchvision.transforms as transforms
+```
+
+```python
+from htru1 import HTRU1
+```
+
+```python
+# convert data to a normalized torch.FloatTensor
+transform = transforms.Compose([
+    transforms.RandomHorizontalFlip(), # randomly flip and rotate
+    transforms.RandomRotation(10),
+    transforms.ToTensor(),
+    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+    ])
+ ```
+ 
+```python
+# choose the training and test datasets
+train_data = HTRU1('data', train=True, download=True, transform=transform)
+test_data = HTRU1('data', train=False, download=True, transform=transform)
+```
