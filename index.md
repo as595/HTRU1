@@ -21,7 +21,7 @@ M. J. Keith et al., 2010, Monthly Notices of the Royal Astronomical Society, vol
 
 The [HRTU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) consists of 60000 32x32 images in 2 classes: pulsar & non-pulsar. Each image has 3 channels (equivalent to RGB), but the channels contain different information:
 
- * Channel 0: Period Correction - Dispersion Measure surface (*bullseye plot*)
+ * Channel 0: Period Correction - Dispersion Measure surface
  * Channel 1: Phase - Sub-band surface
  * Channel 2: Phase - Sub-integration surface
 
