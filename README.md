@@ -26,14 +26,20 @@ Non-pulsar: <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/
 
 ## Using the Dataset in PyTorch
 
+The [htru1.py] file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the HTRU1 Batched Dataset. To use it with PyTorch in Python, first import the torchvision datasets and transforms libraries:
+
 ```python
 from torchvision import datasets
 import torchvision.transforms as transforms
 ```
 
+Then import the HTRU1 class:
+
 ```python
 from htru1 import HTRU1
 ```
+
+Define the transform:
 
 ```python
 # convert data to a normalized torch.FloatTensor
@@ -44,9 +50,13 @@ transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
     ])
  ```
- 
+
+Read the HTRU1 dataset:
+
 ```python
 # choose the training and test datasets
 train_data = HTRU1('data', train=True, download=True, transform=transform)
 test_data = HTRU1('data', train=False, download=True, transform=transform)
 ```
+
+An example of classification using the HTRU1 class is provided in [this jupyter notebook].
