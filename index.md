@@ -26,7 +26,7 @@ Non-pulsar: ![cand1](https://github.com/as595/HTRU1/blob/master/media/cand_00000
 
 ## Using the Dataset in PyTorch
 
-The [htru1.py] file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the HTRU1 Batched Dataset. To use it with PyTorch in Python, first import the torchvision datasets and transforms libraries:
+The [htru1.py](https://raw.githubusercontent.com/as595/HTRU1/master/htru1.py) file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the HTRU1 Batched Dataset. To use it with PyTorch in Python, first import the torchvision datasets and transforms libraries:
 
 ```python
 from torchvision import datasets
