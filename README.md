@@ -21,5 +21,7 @@ This is an *imbalanced dataset*.
 
 ### Get the data:
 
-[htru1-batches-py](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) <p align="left"><img width=10% src="https://github.com/as595/NITheP/blob/master/media/Radiotelescope-dishanimated.gif"></p> <p align="left"><img width=10% src="https://github.com/as595/NITheP/blob/master/media/Radiotelescope-dishanimated.gif"></p>
+<p align="center">[Download the Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz)</p>
+
+| Pulsar: | <p align="left"><img width=10% src="https://github.com/as595/HTRU1/blob/master/media/pulsar_0000.jpg"></p> | <p align="left"><img width=10% src="https://github.com/as595/HTRU1/blob/master/media/pulsar_0001.jpg"></p> |
 
