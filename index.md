@@ -17,7 +17,13 @@ M. J. Keith et al., 2010, Monthly Notices of the Royal Astronomical Society, vol
 
 ## The HTRU1 Batched Dataset
 
-The HTRU1 Batched Dataset consists of 60000 32x32 colour images in 2 classes: pulsar & non-pulsar. There are 50000 training images and 10000 test images. The HTRU1-BD is inspired by the [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
+The [HRTU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) consists of 60000 32x32 images in 2 classes: pulsar & non-pulsar. Each image has 3 channels (equivalent to RGB), but the channels contain different information:
+
+Channel 0: Period Correction - Dispersion Measure probability surface (*bullseye plot*)
+Channel 1: Phase - Sub-band surface
+Channel 2: Phase - Sub-integration surface
+
+There are 50000 training images and 10000 test images. The [HRTU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) is inspired by the [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
 
 The dataset is divided into five training batches and one test batch. Each batch contains 10000 images. These are in random order, but each batch contains the same balance of pulsar and non-pulsar images. Between them, the six batches contain 1196 true pulsars and 58804 non-pulsars. 
 
@@ -30,7 +36,9 @@ Non-pulsar: ![cand1](/media/cand_000002.jpg) ![cand2](/media/cand_000003.jpg) ![
 
 ## Using the Dataset in PyTorch
 
-The [htru1.py](https://raw.githubusercontent.com/as595/HTRU1/master/htru1.py) file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the HTRU1 Batched Dataset. To use it with PyTorch in Python, first import the torchvision datasets and transforms libraries:
+The [htru1.py](https://raw.githubusercontent.com/as595/HTRU1/master/htru1.py) file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the HTRU1 Batched Dataset. 
+
+To use it with PyTorch in Python, first import the torchvision datasets and transforms libraries:
 
 ```python
 from torchvision import datasets
