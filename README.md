@@ -23,5 +23,7 @@ This is an *imbalanced dataset*.
 
 [Download the Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz)
 
-Pulsar: <p align="left"><img width=10% src="https://github.com/as595/HTRU1/blob/master/media/pulsar_0000.jpg"><img width=10% src="https://github.com/as595/HTRU1/blob/master/media/pulsar_0001.jpg"></p> |
+Pulsar: <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/pulsar_0000.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/pulsar_0001.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/pulsar_0002.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/pulsar_0003.jpg">  <img width=5% src="https://github.com/as595/HTRU1/blob/master/media/pulsar_0004.jpg">
+
+
 
