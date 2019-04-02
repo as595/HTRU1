@@ -23,7 +23,7 @@ The dataset is divided into five training batches and one test batch. Each batch
 
 This is an *imbalanced dataset*.
 
-Pulsar: ![pulsar1](/media/pulsar_0000.jpg) ![pulsar2](/media/pulsar_0001.jpg) ![pulsar3](/media/pulsar_0002.jpg) ![pulsar4](/media/pulsar_0003.jpg) ![pulsar5](https://github.com/as595/HTRU1/blob/master/media/pulsar_0004.jpg) ![pulsar6](/media/pulsar_0005.jpg) ![pulsar7](/media/pulsar_0006.jpg) ![pulsar8](/media/pulsar_0007.jpg) ![pulsar9](/media/pulsar_0008.jpg) ![pulsar10](/media/pulsar_0009.jpg) 
+Pulsar: ![pulsar1](/media/pulsar_0000.jpg) ![pulsar2](/media/pulsar_0001.jpg) ![pulsar3](/media/pulsar_0002.jpg) ![pulsar4](/media/pulsar_0003.jpg) ![pulsar5](/media/pulsar_0004.jpg) ![pulsar6](/media/pulsar_0005.jpg) ![pulsar7](/media/pulsar_0006.jpg) ![pulsar8](/media/pulsar_0007.jpg) ![pulsar9](/media/pulsar_0008.jpg) ![pulsar10](/media/pulsar_0009.jpg) 
 
 Non-pulsar: ![cand1](/media/cand_000002.jpg) ![cand2](/media/cand_000003.jpg) ![cand3](/media/cand_000014.jpg) ![cand4](/media/cand_000015.jpg) ![cand5](/media/cand_000018.jpg) ![cand6](/media/cand_000019.jpg) ![cand7](/media/cand_000022.jpg) ![cand8](/media/cand_000023.jpg) ![cand9](/media/cand_000034.jpg) ![cand10](/media/cand_000035.jpg) 
 
