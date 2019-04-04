@@ -72,4 +72,4 @@ train_data = HTRU1('data', train=True, download=True, transform=transform)
 test_data = HTRU1('data', train=False, download=True, transform=transform)
 ```
 
-An example of classification using the HTRU1 class is provided as a Jupyter notebook that you can [view here](./htru1_tutorial.py) or [download](https://raw.githubusercontent.com/as595/HTRU1/master/htru1_tutorial.py).
+An example of classification using the HTRU1 class is provided as a Jupyter notebook that you can [view here](https://github.com/as595/HTRU1/blob/master/htru1_tutorial.ipynb) or [download](https://raw.githubusercontent.com/as595/HTRU1/master/htru1_tutorial.py).
