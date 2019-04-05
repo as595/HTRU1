@@ -13,6 +13,7 @@ V. Morello, E.D. Barr, M. Bailes, C.M. Flynn, E.F. Keane and W. van Straten, 201
 
 *The High Time Resolution Universe Pulsar Survey - I. System Configuration and Initial Discoveries* 
 M. J. Keith et al., 2010, Monthly Notices of the Royal Astronomical Society, vol. 409, pp. 619-627 [arXiv:1006.5744](the high time resolution universe pulsar survey - in. system configuration and initial discoveries)
+
 DOI: 10.1111/j.1365-2966.2010.17325.x 
 
 The full HTRU dataset is available [here](https://archive.ics.uci.edu/ml/datasets/HTRU2#). 
