@@ -75,9 +75,9 @@ test_data = HTRU1('data', train=False, download=True, transform=transform)
 
 ## Using individual channels from the Dataset in PyTorch
 
-If you want to use only one of the "channels" in the HTRU1 Batched Dataset, you can extract it using the torchvision generic transform transforms.Lambda. 
+If you want to use only one of the "channels" in the HTRU1 Batched Dataset, you can extract it using the torchvision generic transform [transforms.Lambda](https://pytorch.org/docs/stable/torchvision/transforms.html#generic-transforms). 
 
-This function extract a specific channel ("c") and writes the image of that channel out as a greyscale PIL Image:
+This function extracts a specific channel ("c") and writes the image of that channel out as a greyscale PIL Image:
 
 ```python
 def select_channel(x,c):
