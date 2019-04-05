@@ -73,7 +73,7 @@ train_data = HTRU1('data', train=True, download=True, transform=transform)
 test_data = HTRU1('data', train=False, download=True, transform=transform)
 ```
 
-## Using individual channels from the Dataset in PyTorch
+### Using Individual Channels in PyTorch
 
 If you want to use only one of the "channels" in the HTRU1 Batched Dataset, you can extract it using the torchvision generic transform [transforms.Lambda](https://pytorch.org/docs/stable/torchvision/transforms.html#generic-transforms). 
 
