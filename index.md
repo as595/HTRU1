@@ -73,6 +73,34 @@ train_data = HTRU1('data', train=True, download=True, transform=transform)
 test_data = HTRU1('data', train=False, download=True, transform=transform)
 ```
 
+## Using individual channels from the Dataset in PyTorch
+
+If you want to use only one of the "channels" in the HTRU1 Batched Dataset, you can extract it using the torchvision generic transform transforms.Lambda. 
+
+This function extract a specific channel ("c") and writes the image of that channel out as a greyscale PIL Image:
+
+```python
+def select_channel(x,c):
+    
+    from PIL import Image
+    
+    np_img = np.array(x, dtype=np.uint8)
+    ch_img = np_img[:,:,c]
+    img = Image.fromarray(ch_img, 'L')
+    
+    return img
+ ```
+ 
+ You can add it to your pytorch transforms like this:
+ 
+ ```python
+ transform = transforms.Compose(
+    [transforms.Lambda(lambda x: select_channel(x,0)),
+     transforms.ToTensor(),
+     transforms.Normalize([0.5],[0.5])])
+ ```
+ 
+
 An example of classification using the HTRU1 class is provided as a Jupyter notebook that you can [view here](https://github.com/as595/HTRU1/blob/master/htru1_tutorial.ipynb) or [download](https://raw.githubusercontent.com/as595/HTRU1/master/htru1_tutorial.py).
 
 [![HitCount](http://hits.dwyl.io/as595/HTRU1.svg)](http://hits.dwyl.io/as595/HTRU1)
