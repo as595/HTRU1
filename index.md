@@ -26,7 +26,7 @@ The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master
 
 There are 50000 training images and 10000 test images. The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) is inspired by the [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
 
-The dataset is divided into five training batches and one test batch. Each batch contains 10000 images. These are in random order, but each batch contains the same balance of pulsar and non-pulsar images. Between them, the six batches contain 1196 true pulsars and 58804 non-pulsars. 
+The dataset is divided into five training batches and one test batch. Each batch contains 10000 images. These are in random order, but each batch contains the same balance of pulsar and non-pulsar images. Between them, the six batches contain 1194 true pulsars and 58806 non-pulsars. 
 
 This is an *imbalanced dataset*.
 
