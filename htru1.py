@@ -32,25 +32,26 @@ class HTRU1(data.Dataset):
     """
 
     base_folder = 'htru1-batches-py'
-    url = "https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz"
+    #url = "https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz"
+    url = "http://www.jb.man.ac.uk/research/ascaife/htru1-batches-py.tar.gz"
     filename = "htru1-batches-py.tar.gz"
-    tgz_md5 = '804f8ea782ae6ecda372b32199acda71'
+    tgz_md5 = 'f0c7aeeae44cd6d9c4000e943b19bfff'
     train_list = [
-        ['data_batch_1', '183ae2e7401fbc729f87313172f24006'],
-        ['data_batch_2', '893b79040e52b13a5307f656830509f9'],
-        ['data_batch_3', 'b3dcb8384fbc6ea4ecf41c6e4b1dbc0d'],
-        ['data_batch_4', '940ba02727bc43c42af64f20079d81c7'],
-        ['data_batch_5', '9a9d11f225938225798fa70763435bcd'],
-    ]
+                  ['data_batch_1', 'daee3c3dd0a6554279673fc31cb93d34'],
+                  ['data_batch_2', '73b37603b66edb417090198ff136e1fa'],
+                  ['data_batch_3', '936006450eb1b32fece0eab1a42ba71f'],
+                  ['data_batch_4', '954c44996b72af104d290a14699e2488'],
+                  ['data_batch_5', '343a1a08149663d928d8ee2f34244eef'],
+                  ]
 
     test_list = [
-        ['test_batch', '53fa16986f5f3601f9b1103abc653f2b'],
-    ]
+                 ['test_batch', '0e08a33cfc28b7984b8e1e04277ae328'],
+                 ]
     meta = {
-        'filename': 'batches.meta',
-        'key': 'label_names',
-        'md5': 'bb06af850540e8816e96368220a0e430',
-    }
+                'filename': 'batches.meta',
+                'key': 'label_names',
+                'md5': '869286cd7ec19f56632e7d6a11742248',
+                }
 
     def __init__(self, root, train=True,
                  transform=None, target_transform=None,
