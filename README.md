@@ -17,9 +17,9 @@ The full HTRU dataset is available [here](https://archive.ics.uci.edu/ml/dataset
 
 The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) consists of 60000 32x32 images in 2 classes: pulsar & non-pulsar. Each image has 3 channels (equivalent to RGB), but the channels contain different information:
 
- * Channel 0: Period Correction - Dispersion Measure surface
- * Channel 1: Phase - Sub-band surface
- * Channel 2: Phase - Sub-integration surface
+ * **Channel 0:** *Period Correction - Dispersion Measure surface*
+ * **Channel 1:** *Phase - Sub-band surface*
+ * **Channel 2:** *Phase - Sub-integration surface*
 
 There are 50000 training images and 10000 test images. The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) is inspired by the [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
 
@@ -96,6 +96,7 @@ def select_channel(x,c):
      transforms.Normalize([0.5],[0.5])])
  ```
  
+### Jupyter Notebooks
 
 An example of classification using the HTRU1 class in PyTorch is provided as a Jupyter notebook [treating the dataset as an RGB image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial.ipynb) and also [extracting an individual channel as a greyscale image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial_channel.ipynb).
 
