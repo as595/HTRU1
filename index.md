@@ -6,7 +6,7 @@ layout: default
 
 **This site is still underconstruction - data are not yet ready for use**
 
-The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) is a subset of the HTRU Medlat Training Data, a collection of labeled pulsar candidates from the intermediate galactic latitude part of the HTRU survey. HTRU1 was originally assembled to train the SPINN pulsar classifier. If you use this dataset please cite:
+The [HTRU1 Batched Dataset](http://www.jb.man.ac.uk/research/ascaife/htru1-batches-py.tar.gz) is a subset of the HTRU Medlat Training Data, a collection of labeled pulsar candidates from the intermediate galactic latitude part of the HTRU survey. HTRU1 was originally assembled to train the SPINN pulsar classifier. If you use this dataset please cite:
 
 *SPINN: a straightforward machine learning solution to the pulsar candidate selection problem*
 V. Morello, E.D. Barr, M. Bailes, C.M. Flynn, E.F. Keane and W. van Straten, 2014, Monthly Notices of the Royal Astronomical Society, vol. 443, pp. 1651-1662 [arXiv:1406:3627](http://arxiv.org/abs/1406.3627)
@@ -18,13 +18,13 @@ The full HTRU dataset is available [here](https://archive.ics.uci.edu/ml/dataset
 
 ## The HTRU1 Batched Dataset
 
-The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) consists of 60000 32x32 images in 2 classes: pulsar & non-pulsar. Each image has 3 channels (equivalent to RGB), but the channels contain different information:
+The [HTRU1 Batched Dataset](http://www.jb.man.ac.uk/research/ascaife/htru1-batches-py.tar.gz) consists of 60000 32x32 images in 2 classes: pulsar & non-pulsar. Each image has 3 channels (equivalent to RGB), but the channels contain different information:
 
  * **Channel 0:** *Period Correction - Dispersion Measure surface*
  * **Channel 1:** *Phase - Sub-band surface*
  * **Channel 2:** *Phase - Sub-integration surface*
 
-There are 50000 training images and 10000 test images. The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) is inspired by the [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
+There are 50000 training images and 10000 test images. The [HTRU1 Batched Dataset](http://www.jb.man.ac.uk/research/ascaife/htru1-batches-py.tar.gz) is inspired by the [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
 
 The dataset is divided into five training batches and one test batch. Each batch contains 10000 images. These are in random order, but each batch contains the same balance of pulsar and non-pulsar images. Between them, the six batches contain 1194 true pulsars and 58806 non-pulsars. 
 
