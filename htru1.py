@@ -32,7 +32,6 @@ class HTRU1(data.Dataset):
     """
 
     base_folder = 'htru1-batches-py'
-    #url = "https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz"
     url = "http://www.jb.man.ac.uk/research/ascaife/htru1-batches-py.tar.gz"
     filename = "htru1-batches-py.tar.gz"
     tgz_md5 = 'f0c7aeeae44cd6d9c4000e943b19bfff'
