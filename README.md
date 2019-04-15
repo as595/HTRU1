@@ -1,3 +1,4 @@
+
 # HTRU1
 
 **This site is still underconstruction - data are not yet ready for use**
@@ -5,10 +6,10 @@
 The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) is a subset of the HTRU Medlat Training Data, a collection of labeled pulsar candidates from the intermediate galactic latitude part of the HTRU survey. HTRU1 was originally assembled to train the SPINN pulsar classifier. If you use this dataset please cite:
 
 *SPINN: a straightforward machine learning solution to the pulsar candidate selection problem*
-V. Morello, E.D. Barr, M. Bailes, C.M. Flynn, E.F. Keane and W. van Straten [arXiv:1406:3627](http://arxiv.org/abs/1406.3627)
+V. Morello, E.D. Barr, M. Bailes, C.M. Flynn, E.F. Keane and W. van Straten, 2014, Monthly Notices of the Royal Astronomical Society, vol. 443, pp. 1651-1662 [arXiv:1406:3627](http://arxiv.org/abs/1406.3627)
 
 *The High Time Resolution Universe Pulsar Survey - I. System Configuration and Initial Discoveries* 
-M. J. Keith et al., 2010, Monthly Notices of the Royal Astronomical Society, vol. 409, pp. 619-627. DOI: 10.1111/j.1365-2966.2010.17325.x 
+M. J. Keith et al., 2010, Monthly Notices of the Royal Astronomical Society, vol. 409, pp. 619-627 [arXiv:1006.5744](the high time resolution universe pulsar survey - in. system configuration and initial discoveries)
 
 The full HTRU dataset is available [here](https://archive.ics.uci.edu/ml/datasets/HTRU2#). 
 
@@ -22,7 +23,7 @@ The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master
 
 There are 50000 training images and 10000 test images. The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) is inspired by the [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
 
-The dataset is divided into five training batches and one test batch. Each batch contains 10000 images. These are in random order, but each batch contains the same balance of pulsar and non-pulsar images. Between them, the six batches contain 1196 true pulsars and 58804 non-pulsars. 
+The dataset is divided into five training batches and one test batch. Each batch contains 10000 images. These are in random order, but each batch contains the same balance of pulsar and non-pulsar images. Between them, the six batches contain 1194 true pulsars and 58806 non-pulsars. 
 
 This is an *imbalanced dataset*.
 
@@ -68,4 +69,35 @@ train_data = HTRU1('data', train=True, download=True, transform=transform)
 test_data = HTRU1('data', train=False, download=True, transform=transform)
 ```
 
-An example of classification using the HTRU1 class is provided as a Jupyter notebook that you can [view here](https://github.com/as595/HTRU1/blob/master/htru1_tutorial.ipynb) or [download](https://raw.githubusercontent.com/as595/HTRU1/master/htru1_tutorial.py).
+### Using Individual Channels in PyTorch
+
+If you want to use only one of the "channels" in the HTRU1 Batched Dataset, you can extract it using the torchvision generic transform [transforms.Lambda](https://pytorch.org/docs/stable/torchvision/transforms.html#generic-transforms). 
+
+This function extracts a specific channel ("c") and writes the image of that channel out as a greyscale PIL Image:
+
+```python
+def select_channel(x,c):
+    
+    from PIL import Image
+    
+    np_img = np.array(x, dtype=np.uint8)
+    ch_img = np_img[:,:,c]
+    img = Image.fromarray(ch_img, 'L')
+    
+    return img
+ ```
+ 
+ You can add it to your pytorch transforms like this:
+ 
+ ```python
+ transform = transforms.Compose(
+    [transforms.Lambda(lambda x: select_channel(x,0)),
+     transforms.ToTensor(),
+     transforms.Normalize([0.5],[0.5])])
+ ```
+ 
+
+An example of classification using the HTRU1 class in PyTorch is provided as a Jupyter notebook [treating the dataset as an RGB image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial.ipynb) and also [extracting an individual channel as a greyscale image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial_channel.ipynb).
+
+[![HitCount](http://hits.dwyl.io/as595/HTRU1.svg)](http://hits.dwyl.io/as595/HTRU1)
+
