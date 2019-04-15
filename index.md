@@ -99,6 +99,7 @@ def select_channel(x,c):
      transforms.Normalize([0.5],[0.5])])
  ```
  
+### Jupyter Notebooks
 
 An example of classification using the HTRU1 class in PyTorch is provided as a Jupyter notebook [treating the dataset as an RGB image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial.ipynb) and also [extracting an individual channel as a greyscale image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial_channel.ipynb).
 
