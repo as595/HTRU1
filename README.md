@@ -9,7 +9,7 @@ The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master
 V. Morello, E.D. Barr, M. Bailes, C.M. Flynn, E.F. Keane and W. van Straten, 2014, Monthly Notices of the Royal Astronomical Society, vol. 443, pp. 1651-1662 [arXiv:1406:3627](http://arxiv.org/abs/1406.3627)
 
 *The High Time Resolution Universe Pulsar Survey - I. System Configuration and Initial Discoveries* 
-M. J. Keith et al., 2010, Monthly Notices of the Royal Astronomical Society, vol. 409, pp. 619-627 [arXiv:1006.5744](the high time resolution universe pulsar survey - in. system configuration and initial discoveries)
+M. J. Keith et al., 2010, Monthly Notices of the Royal Astronomical Society, vol. 409, pp. 619-627 [arXiv:1006.5744](https://arxiv.org/abs/1006.5744)
 
 The full HTRU dataset is available [here](https://archive.ics.uci.edu/ml/datasets/HTRU2#). 
 
