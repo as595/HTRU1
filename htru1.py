@@ -34,22 +34,22 @@ class HTRU1(data.Dataset):
     base_folder = 'htru1-batches-py'
     url = "http://www.jb.man.ac.uk/research/ascaife/htru1-batches-py.tar.gz"
     filename = "htru1-batches-py.tar.gz"
-    tgz_md5 = 'f0c7aeeae44cd6d9c4000e943b19bfff'
+    tgz_md5 = 'e7b063301ada3eb50f212afeea185a36'
     train_list = [
-                  ['data_batch_1', 'daee3c3dd0a6554279673fc31cb93d34'],
-                  ['data_batch_2', '73b37603b66edb417090198ff136e1fa'],
-                  ['data_batch_3', '936006450eb1b32fece0eab1a42ba71f'],
-                  ['data_batch_4', '954c44996b72af104d290a14699e2488'],
-                  ['data_batch_5', '343a1a08149663d928d8ee2f34244eef'],
+                  ['data_batch_1', '3a085bdcc186a8f9d8f120adcde8f3d2'],
+                  ['data_batch_2', '12e4ff7648ffc2047ff4774a6074bc0d'],
+                  ['data_batch_3', '12c0dd52b4febe4132917cf733ceae2c'],
+                  ['data_batch_4', 'b377c8a723603c4addf32831607f13e7'],
+                  ['data_batch_5', 'f6bc78dec3d75e3db005a7a9b7d910c0'],
                   ]
 
     test_list = [
-                 ['test_batch', '0e08a33cfc28b7984b8e1e04277ae328'],
+                 ['test_batch', 'dc2d5f6ebf826eff1cbb0942705796b9'],
                  ]
     meta = {
                 'filename': 'batches.meta',
                 'key': 'label_names',
-                'md5': '869286cd7ec19f56632e7d6a11742248',
+                'md5': '5429d773dafec7781e0eeacb29768819',
                 }
 
     def __init__(self, root, train=True,
@@ -85,7 +85,7 @@ class HTRU1(data.Dataset):
                     entry = pickle.load(f)
                 else:
                     entry = pickle.load(f, encoding='latin1')
-                    
+
                 self.data.append(entry['data'])
                 if 'labels' in entry:
                     self.targets.extend(entry['labels'])
@@ -168,4 +168,3 @@ class HTRU1(data.Dataset):
         tmp = '    Target Transforms (if any): '
         fmt_str += '{0}{1}'.format(tmp, self.target_transform.__repr__().replace('\n', '\n' + ' ' * len(tmp)))
         return fmt_str
-
