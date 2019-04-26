@@ -103,5 +103,7 @@ def select_channel(x,c):
 
 An example of classification using the HTRU1 class in PyTorch is provided as a Jupyter notebook [treating the dataset as an RGB image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial.ipynb) and also [extracting an individual channel as a greyscale image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial_channel.ipynb).
 
+These are examples for demonstration only - please don't use them for science!
+
 [![HitCount](http://hits.dwyl.io/as595/HTRU1.svg)](http://hits.dwyl.io/as595/HTRU1)
 
