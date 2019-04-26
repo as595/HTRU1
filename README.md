@@ -1,8 +1,6 @@
 
 # HTRU1
 
-**This site is still underconstruction - data are not yet ready for use**
-
 The [HTRU1 Batched Dataset](https://raw.githubusercontent.com/as595/HTRU1/master/htru1-batches-py.tar.gz) is a subset of the HTRU Medlat Training Data, a collection of labeled pulsar candidates from the intermediate galactic latitude part of the HTRU survey. HTRU1 was originally assembled to train the SPINN pulsar classifier. If you use this dataset please cite:
 
 *SPINN: a straightforward machine learning solution to the pulsar candidate selection problem*
